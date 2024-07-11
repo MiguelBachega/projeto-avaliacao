@@ -18,3 +18,20 @@ h3{
     font-size: 16px;
     
 }
+
+.accordion-item{
+    background-color: transparent !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none;
+}
+
+.accordion-button::after{
+    background-image: url(img/+\ copy\ 4.png);
+    background-size: contain;
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(img/-.png);
+}   
