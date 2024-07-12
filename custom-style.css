@@ -34,4 +34,78 @@ h3{
 
 .accordion-button:not(.collapsed)::after{
     background-image: url(img/-.png);
-}   
+}
+
+.carousel-control-prev-icon{
+    background-image: url(img/arror-left.svg);
+}
+
+.carousel-control-next-icon{
+    background-image: url(img/arror-right.svg);
+}
+
+.carousel-indicators .active{
+    background-color: #f29590 !important;
+}
+
+@media (max-width: 1200px){
+    .bg__img{
+        background-image: none !important;
+    }
+}
+
+@media (min-width: 1200px){
+    .img__r{
+        display: none;
+    }
+}
+
+@media (max-width: 768px){
+    h2{
+        font-size: 28px;
+    }
+
+    .logo{
+        width: 30%;
+    }
+
+    .logo__footer{
+        width: 30% !important;
+    }
+}
+
+@media (max-width: 992px){
+    .banner__section{
+        margin-top: 0px !important;
+    }
+
+    .navbar__top{
+        background-color: #fbded6 !important;
+    }
+
+    .logo{
+        width: 25%;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1400px){
+    .banner__section{
+        margin-top: -92px !important;
+
+    }
+}
+
+@media (min-width:0px) and (max-width: 576px){
+
+    .logo{
+        width: 45%;
+    }
+
+    .logo__footer{
+        width: 45% !important;
+    }
+
+    .img__tratamentos{
+        width: 55% !important;
+    }
+}

@@ -16,8 +16,8 @@
         <div  style="background-color: #f29590;">
             <div class="container p-1 d-flex align-items-center">
                 <h2 style="font-size: 14px;" class="mb-0">Lovey Skin Care</h2>
-                <div class="ms-auto">
-                    <i class="bi bi-envelope-fill"> contato@loveyskincare.com</i>
+                <div class="ms-auto d-flex gap-1">
+                    <i class="bi bi-envelope-fill"> <span class="d-none d-sm-inline-block">contato@loveyskincare.com</span></i>
                     <a href="#"><i class="bi bi-facebook text-dark mx-1"></i></a>
                     <a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
                     <a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
@@ -25,13 +25,13 @@
             </div>
         </div>
         <!-- Navbar -->
-        <nav style="z-index: 99; background-color: transparent;" class="navbar navbar-expand-lg navbar-light p-3">
+        <nav style="z-index: 99; background-color: transparent;" class="navbar__top navbar navbar-expand-lg navbar-light p-3">
             <div class="container">
                 <img src="img/lAsset 1.svg" alt="" class="img-fluid logo">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
                 
                 <div class="collapse navbar-collapse justify-content-between gap-2" id="navmenu">
-                    <ul class="navbar-nav ms-auto justify-content-between gap-3">
+                    <ul class="navbar-nav ms-auto justify-content-between gap-lg-3">
                         <li class="nav-item">
                             <a href="#home" class="nav-link">
                                 Início
@@ -53,7 +53,7 @@
                             </a>
                         </li>
                     </ul>
-                    <button class="btn text-dark me-2" type="button"><img src="img/icone login.png"> Login</button>
+                    <button class="btn text-dark me-2 p-0 p-lg-3" type="button"><img src="img/icone login.png"> Login</button>
                     <button class="btn btn-sm btn-outline-danger text-dark rounded-pill px-3" type="button">Iniciar Consulta</button>
                 </div>
             </div>
@@ -61,12 +61,11 @@
     </header>
     <main>
         <!-- Banner-Section -->
-        <section style="margin-top: -102px; z-index: 0;">
+        <section class="banner__section" style="margin-top: -102px; z-index: 0;">
             <div id="carouselExampleIndicators" class="carousel slide">
                 <div class="carousel-indicators">
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" class="bg-secondary" aria-label="Slide 2"></button>
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
@@ -91,14 +90,14 @@
         <section class="pb-5 pt-3">
             <div class="container">
                 <div class="row align-items-start justify-content-between gap-2">
-                    <div class="col-md">
+                    <div class="col-md order-3 order-md-0">
                         <img src="img/rosto1.jpg" alt="parte inferior de um rosto feminino, metade com espinhas e outra metade sem" class="img-fluid w-100">
                     </div>
                     <div class="col-md flex-column">
                         <h2>Um Skin Care para chamar de seu!</h2>
                         <p>Tratamentos personalizados para cada tipo de pele de acordo com seu o bjetivo. Prescrito só para você.</p>
                         <a href="#" class="btn btn-light text-dark btn-outline-danger rounded-pill py-2 px-4 my-3"> Ver tratamentos <i class="bi bi-chevron-right"></i></a>
-                        <img src="img/rosto2.jpg" alt="parte inferior de um rosto masculino, metade com espinhas e outra metade sem" class="img-fluid w-100 ms-4 mt-5">
+                        <img src="img/rosto2.jpg" alt="parte inferior de um rosto masculino, metade com espinhas e outra metade sem" class="img-fluid w-100 ms-4-md mt-5-md">
                     </div>
                 </div>
             </div>
@@ -164,25 +163,25 @@
          </section>
 
          <!-- Como podemos ajudar? -->
-         <section style="background-image: url(img/moca.png); background-position: right center; background-repeat: no-repeat; background-size: auto;" class="pt-3 pb-5">
+         <section style="background-image: url(img/moca.png); background-position: right center; background-repeat: no-repeat; background-size: auto;" class="bg__img pt-3 pb-5">
             <div class="container">
-                <div class="row align-items-start justify-content-between">
-                    <div class="col-md d-flex flex-column align-items-start w-75">
-                        <h2 class="w-50">Como podemos te ajudar?</h2>
+                <div class="row align-items-start justify-content-between row-gap-5">
+                    <div class="col-lg-6 d-flex flex-column align-items-start">
+                        <h2>Como podemos te ajudar?</h2>
                         <h3 style="color:#909098">Sua consulta será rápida e simples.</h3>
-                        <p style="width: 70%;">Através de um passo a passo guiaremos você até sabermos seus objetivos e características únicas de sua pele assim como dados importantes sobre sua saúde que possam influenciar seu tratamento e então vamos prescrever seu skincare único que será entregue na sua porta.</p>
+                        <p>Através de um passo a passo guiaremos você até sabermos seus objetivos e características únicas de sua pele assim como dados importantes sobre sua saúde que possam influenciar seu tratamento e então vamos prescrever seu skincare único que será entregue na sua porta.</p>
                         <div class="row align-items-start justify-content-between gap-2">
                             <div class="col-md">
-                                <img src="img/tratamentoscol1-alt.png" alt="lista com 3 tratamentos" class="img-fluid">
+                                <img src="img/tratamentoscol1-alt.png" alt="lista com 3 tratamentos" class="img-fluid img__tratamentos">
                             </div>
                             <div class="col-md">
-                                <img src="img/tratamentoscol2.png" alt="lista com 3 tratamentos" class="img-fluid">   
+                                <img src="img/tratamentoscol2.png" alt="lista com 3 tratamentos" class="img-fluid img__tratamentos">   
                             </div>
                         </div>
                         <a href="#" class="btn btn-light text-dark btn-outline-danger border-2 rounded-pill py-2 px-4 mt-4"> Inicie sua consulta grátis <i class="bi bi-chevron-right"></i></a>
                     </div>
-                    <div class="col-md">
-                        <div></div>
+                    <div class="col-lg-6 my-auto">
+                        <img src="img/moca.png" class="img__r w-100" alt="">
                     </div>
                 </div>
             </div>
@@ -195,21 +194,21 @@
                 <h3 style="font-weight: 400;" class="mb-3">Compreenda os passos até o seu diagnóstico.</h3>
                 <div class="row row-gap-2 justify-content-start">
 
-                    <div class="col-md-6 col-lg-4 px-1">
+                    <div class="col-lg-4 px-1">
                         <div class="card bg-transparent border-0 text-light py-2">
                             <div class="card-body d-flex flex-column align-items-center gap-3">
                                 <img src="img/icon1.png" alt="icone de uma rosa" class="img-fluid">
-                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title mb-0 mt-2">Conte-nos sobre você.</h4>
+                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title text-center mb-0 mt-2">Conte-nos sobre você.</h4>
                                 <p style="font-size: 14px; color: #f7ccd0;" class="card-text text-center m-auto">Complete nosso questionário para iniciar sua jornada com a Lov..ey, e conte-nos sobre seus objetivos e principalment, tire pelomenos três fotos ao natural de sua pele.</p>
                             </div>
                         </div>
                     </div>
                     
-                    <div class="col-md-6 col-lg-4 px-1">
+                    <div class="col-lg-4 px-1">
                         <div class="card bg-transparent border-0 text-light py-2">
                             <div class="card-body d-flex flex-column align-items-center gap-3">
                                 <img src="img/icon2.png" alt="icone de uma rosa" class="img-fluid">
-                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title mb-0 mt-2">Aqui o Skincar encontra a ciência.</h4>
+                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title text-center mb-0 mt-2">Aqui o Skincar encontra a ciência.</h4>
                                 <p style="font-size: 14px; color: #f7ccd0;" class="card-text text-center m-auto">Nossa equipe fará uma prescrição
                                     personalizada que evolui de acordo com cada etapa de seu tratamento. 
                                     Você contará com acompanhamento incluso em sua assinatura (com até 2 consultas por mês.), mas não se preocupe, estaremos sempre disponíveis.</p>
@@ -217,11 +216,11 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-4 px-1">
+                    <div class="col-lg-4 px-1">
                         <div class="card bg-transparent border-0 text-light py-2">
                             <div class="card-body d-flex flex-column align-items-center gap-3">
                                 <img src="img/icon3.png" alt="icone de uma rosa" class="img-fluid">
-                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title mb-0 mt-2">Voilá, sua assinatura está pronta.</h4>
+                                <h4 style="font-size: 20px; color: #fcebed;" class="card-title text-center mb-0 mt-2">Voilá, sua assinatura está pronta.</h4>
                                 <p style="font-size: 14px; color: #f7ccd0;" class="card-text text-center m-auto">Após finalizar o Checkout, escolher seu 
                                     tratamento e nos enviar suas fotos para diagnóstico. Enviaremos a você uma nova fórmula a cada 90 dias diretamente no seu endereço.</p>
                             </div>
@@ -246,7 +245,7 @@
                     <div class="col-md-6 col-lg-3 px-1">
                         <div style="background-color:#5256b0;" class="card text-dark border-0 rounded-top-4 rounded-bottom-3">
                             <img src="img/IMG 1.png" alt="mulher realizando hidratação facial" class="img-fluid">
-                            <div class="card-body d-flex flex-column align-items-center align-items-lg-start">
+                            <div class="card-body d-flex flex-column align-items-start">
                                 <h4 style="font-size: 16px; color: #cacbe6;" class="card-title mb-0 mt-2 w-50">Nome da matéria ou do artigo</h4>
                                 <p style="font-size: 12px; color:#cacbe6;" class="card-text py-3 pb-4">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh volutpat."</p>
                             </div>
@@ -256,7 +255,7 @@
                     <div class="col-md-6 col-lg-3 px-1">
                         <div style="background-color:#5256b0;" class="card text-dark border-0 rounded-top-4 rounded-bottom-3">
                             <img src="img/IMG2.png" alt="mulher realizando hidratação na mão" class="img-fluid">
-                            <div class="card-body d-flex flex-column align-items-center align-items-lg-start">
+                            <div class="card-body d-flex flex-column align-items-start">
                                 <h4 style="font-size: 16px; color: #cacbe6;" class="card-title mb-0 mt-2 w-50">Nome da matéria ou do artigo</h4>
                                 <p style="font-size: 12px; color:#cacbe6;" class="card-text py-3 pb-4">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh volutpat."</p>
                             </div>
@@ -266,7 +265,7 @@
                     <div class="col-md-6 col-lg-3 px-1">
                         <div style="background-color:#5256b0;" class="card text-dark border-0 rounded-top-4 rounded-bottom-3">
                             <img src="img/IMG3.png" alt="mulher realizando hidratação facial" class="img-fluid">
-                            <div class="card-body d-flex flex-column align-items-center align-items-lg-start">
+                            <div class="card-body d-flex flex-column align-items-start">
                                 <h4 style="font-size: 16px; color: #cacbe6;" class="card-title mb-0 mt-2 w-50">Nome da matéria ou do artigo</h4>
                                 <p style="font-size: 12px; color:#cacbe6;" class="card-text py-3 pb-4">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh volutpat."</p>
                             </div>
@@ -276,7 +275,7 @@
                     <div class="col-md-6 col-lg-3 px-1">
                         <div style="background-color:#5256b0;" class="card text-dark border-0 rounded-top-4 rounded-bottom-3">
                             <img src="img/IMG4.png" alt="mulher realizando hidratação facial" class="img-fluid">
-                            <div class="card-body d-flex flex-column align-items-center align-items-lg-start">
+                            <div class="card-body d-flex flex-column align-items-start">
                                 <h4 style="font-size: 16px; color: #cacbe6;" class="card-title mb-0 mt-2 w-50">Nome da matéria ou do artigo</h4>
                                 <p style="font-size: 12px; color:#cacbe6;" class="card-text py-3 pb-4">“Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh volutpat."</p>
                             </div>
@@ -289,13 +288,13 @@
          <!-- FAQ -->
          <section style="background-image: url(img/bg-faq.png); background-size: cover;" class="py-4">
             <div class="container text-light">
-                <div class="row justify-content-between gap-5 ">
-                    <div class="col-md-3 d-flex flex-column align-items-start justify-content-center px-0">
+                <div class="row justify-content-between p-2 ">
+                    <div class=" col-lg-3 d-flex flex-column align-items-start justify-content-center px-0">
                         <h2 style="font-size: 24px; font-weight: 400;">FAQ - Dúvidas frequentes</h2>
-                        <a href="#" class="btn btn-transparent text-light btn-outline-danger border-2 rounded-pill py-2 px-4 mt-3"> Inicie sua consulta grátis <i class="bi bi-chevron-right"></i></a>
+                        <a href="#" class="btn btn-transparent text-light btn-outline-danger border-2 rounded-pill py-2 px-4 my-3"> Inicie sua consulta grátis <i class="bi bi-chevron-right"></i></a>
                     </div>
                     
-                    <div class="col-md-4 px-0 ">
+                    <div class="col-md-5 col-lg-3 px-0 ">
                         <div class="accordion accordion-flush" id="A1">
                             <div style="border-bottom: 2px solid #9593c8;" class="accordion-item">
                                 <h2 class="accordion-header ">
@@ -339,7 +338,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 px-0">
+                    <div class="col-md-5 col-lg-3 px-0">
                         <div class="accordion accordion-flush" id="A2">
                             <div style="border-bottom: 2px solid #9593c8;" class="accordion-item">
                                 <h2 class="accordion-header">
@@ -389,19 +388,21 @@
     </main>
     <footer>
         <div class="container py-3">
-            <div class="row align-items-center">
-                <div class="col-md">
-                    <img src="img/lAsset 1.svg" alt="" class="img-fluid logo w-100">
+            <div class="row row-gap-3 row-gap-md-0 align-items-center">
+                <div class="col-md-3 col-lg-2">
+                    <img src="img/lAsset 1.svg" alt="" class="img-fluid logo__footer w-100">
                 </div>
-                <div class="col-md">
+                <div class="col-md-4 col-lg-3">
                     <h2 style="font-size: 22px;">Lov.ey Skin Care</h2>
-                    <i class="bi bi-envelope-fill"> contato@loveyskincare.com</i>
-                    <i class="bi bi-whatsapp"> +55(43) 99999.9999</i>
+                    <div class="d-flex flex-column">
+                        <i class="bi bi-envelope-fill text-danger"> <span class="text-dark">contato@loveyskincare.com</span></i>
+                        <i class="bi bi-whatsapp text-danger"> <span class="text-dark">+55(43) 99999.9999</span></i>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <nav style="z-index: 99; background-color: transparent;" class="navbar navbar-expand-lg navbar-light p-3">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse justify-content-between" id="navmenu">
+                <div class="col-md-2 col-lg-2">
+                    <nav style="z-index: 99; background-color: transparent;" class="navbar navbar-expand-lg navbar-light p-0 p-md-3">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu2"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navmenu2">
                                 <ul class="navbar-nav flex-column justify-content-between">
                                     <li class="nav-item">
                                         <a href="#home" class="nav-link p-1">
@@ -427,10 +428,10 @@
                             </div>
                     </nav>
                 </div>
-                <div class="col-md">
-                    <nav style="z-index: 99; background-color: transparent;" class="navbar navbar-expand-lg navbar-light p-3">
-                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span class="navbar-toggler-icon"></span></button>
-                            <div class="collapse navbar-collapse justify-content-between" id="navmenu">
+                <div class="col-md-3 col-lg-2">
+                    <nav style="z-index: 99; background-color: transparent;" class="navbar navbar-expand-lg navbar-light p-0 p-md-3">
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu3"><span class="navbar-toggler-icon"></span></button>
+                            <div class="collapse navbar-collapse justify-content-between" id="navmenu3">
                                 <ul class="navbar-nav flex-column justify-content-between">
                                     <li class="nav-item">
                                         <a href="#apoio" class="nav-link p-1">
@@ -456,8 +457,8 @@
                             </div>
                     </nav>
                 </div>
-                <div class="col-md-3 d-flex flex-column justify-content-start align-items-end">
-                    <div class="d-flex flex-column align-items-center justify-content-center bg-secondary rounded-2 w-25 h-25 p-1">
+                <div class="col-md-12 col-lg-3 d-flex flex-column justify-content-start align-items-start align-items-md-end">
+                    <div class="d-flex flex-column align-items-center justify-content-center bg-secondary rounded-2 w-25 h-25 p-1 mb-1">
                         <i style="font-size: 20px;" class="bi bi-chevron-double-up text-danger"></i>
                         <a href="#" style="font-size: 10px;"class="btn text-light text-center p-0">VOLTAR AO TOPO</a>
                     </div>
@@ -465,19 +466,29 @@
                         <h2 style="font-size: 20px; font-style: italic;" class="mb-0">Newsletter</h2>
                         <h3 style="font-size: 10px;">Assine nossa Newsletter e receba novidades em primeira mão</h3>
                     </div>
-                    <input type="email" name="email" id="email" placeholder="Seu melhor e-mail &#xF002;" >
+                    <div class="border-2 border-bottom border-dark w-100 d-flex justify-content-between"><input type="email" name="email" id="email" placeholder="Seu melhor e-mail" class="border-0" ><i class="bi bi-envelope-fill text-danger"></i></div>
                     <a style="font-size: 12px;" href="#" class="btn btn-transparent text-dark btn-outline-danger border-2 rounded-pill py-1 px-3 mt-3"> Cadastrar <i class="bi bi-chevron-right"></i></a>
                 </div>
             </div>
         </div>
         <div style="background-color: #e86972;">
+            
+                
             <div class="container py-3 d-flex align-items-center">
-                <h2 style="font-size: 14px; font-weight: 400;" class="mb-0 text-light">Lov.ey Skin Care © 2021 - Todos os direitos reservados</h2>
-                <div class="d-flex align-items-center justify-content-end gap-3 ms-auto">
-                    <p class="text-light mb-0">Solução Desenvolvida pela:</p>
-                    <img class="img-fluid w-25" src="img/logo-white.svg" alt="logo expression">
+                <div class="row row-gap-2 text-center text-sm-start">
+                    <div class="col-sm-5">
+                        <h2 style="font-size: 14px; font-weight: 400;" class="mb-0 text-light">Lov.ey Skin Care © 2021 - Todos os direitos reservados</h2>
+                    </div>
+                    <div class="col-sm">
+                        <div class="d-flex align-items-center justify-content-center justify-content-sm-end gap-3 ms-auto">
+                            <p class="text-light mb-0">Solução Desenvolvida pela:</p>
+                            <img class="img-fluid w-25" src="img/logo-white.svg" alt="logo expression">
+                        </div>
+                    </div>
                 </div>
             </div>
+           
+            
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
