@@ -1,5 +1,40 @@
 @charset 'UTF-8';
 
+*{
+    font-family: 'Montserrat';
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fontes/Montserrat/Montserrat-Light.ttf') format('ttf'), url('fontes/Montserrat/Montserrat-Light.otf') format('otf'), url('fontes/Montserrat/Montserrat-Light.woff') format('woff');
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fontes/Montserrat/Montserrat-Regular.ttf') format('ttf'), url('fontes/Montserrat/Montserrat-Regular.otf') format('otf'), url('fontes/Montserrat/Montserrat-Regular.otf') format('woff');
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fontes/Montserrat/Montserrat-Medium.ttf') format('ttf'), url('fontes/Montserrat/Montserrat-Medium.otf') format('otf'), url('fontes/Montserrat/Montserrat-Medium.woff') format('woff');
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fontes/Montserrat/Montserrat-SemiBold.ttf') format('ttf'), url('fontes/Montserrat/Montserrat-SemiBold.ttf') format('otf'), url('fontes/Montserrat/Montserrat-SemiBold.woff') format('woff');
+    font-style: normal;
+    font-weight: 600;
+}
+html{
+    scroll-behavior: smooth;
+}
+
 .logo{
     width: 15%;
 }
@@ -7,16 +42,24 @@
 p{
     font-size: 16px;
     color: #a6a6ab;
+    font-weight: 400;
 }
 
 h2{
+    font-family: juicy-pro-standard, sans-serif;
+    font-style: normal;
+    font-weight: 100;
     font-size: 38px;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 h3{
     font-size: 16px;
     
+}
+
+a{
+    font-weight: 600;
 }
 
 .accordion-item{
