@@ -91,6 +91,10 @@ a{
     background-color: #f29590 !important;
 }
 
+.logo__expression{
+    width: fit-content !important;
+}
+
 @media (max-width: 1200px){
     .bg__img{
         background-image: none !important;
@@ -152,3 +156,4 @@ a{
         width: 55% !important;
     }
 }
+
